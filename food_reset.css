@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* reset */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size:0.625em;
+	line-height: 1;
+}
+
+body{
+	font-family: Georgia;
+	line-height: 1.15;
+}
+
+li{
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+	color:#34ac98;
+}
+
+a:hover{
+	color:#ff7f50;
+}
+
+fieldset{
+	border:none;
+}
+
+/*common*/
+.clearfix:after{
+	content: " ";
+	display: block;
+	clear:both;
+}
+
+.screen_out{
+	position:absolute;
+	left:-9999em;
+	top:-9999em;
+}
+
+.ir_pm{
+	text-indent: -9999em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+

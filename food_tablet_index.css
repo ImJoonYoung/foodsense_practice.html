@@ -1,0 +1,406 @@
+@charset "utf-8";
+/*tablet*/
+@media screen and (min-width:769px){
+/*common*/
+.pc_show {
+	display: none;
+}
+
+.tablet_show{
+		display: block;
+	}
+	
+.m_show {
+	display: block;
+}
+/*common*/
+.wrap {
+	width: 700px;
+	/*margin: 0 auto;*/
+}
+
+/*left-s*/
+.left {
+	width: 100%;
+	
+}
+
+/* header */
+header {
+/*	position: relative;
+	width: 100%;*/
+	height: 150px;
+}
+
+
+header h1 {
+	/*position: absolute;*/
+	left:0;
+	top:15px;
+	transform: translate(0%);
+	width: 100px;
+	height: 100px;
+}
+
+/* nav */
+nav {
+/*	width: 100%;
+	height: 50px;*/
+	text-align: end;
+	line-height: 90px;
+	margin-top:0px;
+	border-bottom:none;
+}
+
+.lnb > li {
+	/*display: inline-block;*/
+	margin-left: 25px;
+	margin-top:35px;
+}
+
+.lnb li a {
+	/*display: block;
+	width: 100%;
+	height: 100%;*/
+	font-size: 1.4rem;
+	font-style:italic;
+}
+	
+	.lnb li:nth-of-type(1){
+  background:url(../images/nav-tastemakers.png) no-repeat center top;
+	}
+	
+		.lnb li:nth-of-type(2){
+  background:url(../images/nav-blog.png) no-repeat center top;
+	}
+	
+		.lnb li:nth-of-type(3){
+  background:url(../images/nav-alist.png) no-repeat center top;
+	}
+	
+		.lnb li:nth-of-type(4){
+  background:url(../images/nav-contribute.png) no-repeat center top;
+	}
+	
+		.lnb li:nth-of-type(5){
+  background:url(../images/nav-about.png) no-repeat center top;
+	}
+	
+	.lnb li:hover{
+		background-position: left;
+	}
+
+/*left-e*/
+
+/*right-s*/
+.right {
+	/*position: relative;
+	width: 100%;*/
+	height: 300px;
+}
+
+/* main-slide */
+.food_slide{
+	width: 100%;
+	margin-top:20px;
+}
+
+.food_slide li{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+
+.food_slide li .bg i{
+	position: absolute;
+	top:45%;
+	left:65%;
+	width: 250px;
+	height: 60px;
+	text-align: center;
+	line-height: 45px;
+	background: #fff;
+	font-size:2.5rem;
+	overflow:hidden;
+}
+
+.food_slide li .bg b {
+	position: absolute;
+	top:61%;
+	left:36%;
+	width: 450px;
+	height: 50px;
+	text-align: center;
+	line-height: 35px;
+	padding: 8px;
+	background: #000;
+	font-size: 1.8rem;
+	color: #fff;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.food_slide li:nth-of-type(3) .bg b{
+	left:30%;
+	width:500px;
+}
+
+.food_slide li:nth-of-type(4) .bg b{
+	left:33%;
+	width:470px;
+}
+
+.food_slide li:nth-of-type(5) .bg b{
+	left:17%;
+	width:580px;
+	text-align: start;
+}
+
+.food_slide li:nth-of-type(5) .bg b::after{
+	content:" interviewd";
+}
+
+.food_slide li small{
+	position: absolute;
+	bottom:0;
+	right: 20px;
+	display: inline-block;
+	width:140px;
+	height: 20px;
+	padding-left: 8px;
+	text-align: center;
+	line-height: 20px;
+	background:rgba(255,255,255,0.4);
+	border-radius: 5px;
+	color:#000;
+	font-size:1.2rem;
+}
+
+.food_slide .slick-dots{
+	display: block;
+	position: absolute;
+	width:100%;
+}
+
+.food_slide .slick-dots li{
+	width:175px;
+	height: 45px;
+	float:left;
+}
+
+.food_slide .slick-dots li button{
+	width:100%;
+	height: 100%;
+	cursor: pointer;
+	text-indent: -9999em;
+	overflow: hidden;
+	background:transparent;
+	border:none;
+	z-index: 10;
+}
+
+/*indi tablet_show-s*/
+	.indi_wrap{
+		width:100%;
+		height:35px;
+		margin-bottom:40px;
+	}
+	
+	.indi{
+		width:100%;
+		height:100%;
+		text-align: center;
+		line-height: 35px;
+	}
+	
+	.indi li{
+		width:25%;
+		float:left;
+		background:rgba(74, 141, 136,0.2);
+	}
+	
+	.indi li a{
+		display: block;
+		width:100%;
+		height:100%;
+		font-size:1.7rem;
+		padding:5px 10px;
+		border-left:1px dotted; 
+	}
+	
+	.indi li:nth-child(1)>a{
+		border:none;
+	}
+	
+	.indi li:hover{
+		background:rgba(74, 141, 136,0.4)
+	}
+/*indi tablet_show-e*/
+
+/*email_wrap-s*/
+.email_wrap {
+	/*width: 100%;*/
+	height: 60px;
+	/*border-top: 1px dotted #c1c1c1;
+	border-bottom: 1px dotted #c1c1c1;*/
+/*	padding: 10px;*/
+	background: url(../images/icon-mailinglist-32.png) no-repeat 5px 10px/35px;
+	margin-bottom: 30px;
+}
+
+.email_wrap p {
+	width: 55%;
+	font-size: 1.2rem;
+	/*line-height: 1.5;*/
+	margin-left: 40px;
+	/*color: #646262;*/
+	margin-bottom: 0px;
+}
+
+#email-form {
+	width: 45%;
+	height:100%;
+	float:right;
+	margin-top:-30px;
+	text-align: end;
+}
+
+#email {
+	width: 140px;
+	height:100%;
+	/*padding: 2px;*/
+	/*border: 1px solid #000;*/
+	margin-right: 5px;
+}
+
+#ok {
+	width:60px;
+	height:100%;
+	padding: 4px 2px;
+	/*border-radius: 5px;*/
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: #646262;
+	border:2px solid #646262;
+}
+
+/*emailwrap-e*/
+
+/*food-main-s*/
+.food-main {
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.food-main_wrap {
+	width: 100%;
+	margin-bottom:15px;
+	float:left;
+}
+	
+.food-main_wrap li{
+	width:23%;
+	float:left;
+	margin-left:14px;
+	}
+	
+	.food-main_wrap li:first-child{
+		margin-left:0;
+	}
+
+.img_wrap {
+	width: 100%;
+	height: 95px;
+	padding:7px 5px;
+	/*border: 1px solid #c1c1c1;*/
+	text-align:inherit;
+	line-height: 95px;
+	/*margin-bottom: 10px;*/
+}
+
+.food-main_wrap img {
+/*	width: 100%;*/
+	height:100%;
+}
+
+.food-main_wrap h3,
+p,
+small {
+	display: block;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+.food-main_wrap h3 {
+	font-size: 1.6rem;
+	line-height: 1.3;
+}
+
+.food-main_wrap p {
+	width:96%;
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+
+.food-main_wrap small {
+	/*color: #7f7f7f;*/
+	font-size: 1.2rem;
+}
+/*food-main-e*/
+
+/*footer-s*/
+/* foo_list */
+.foo_list li{
+	/*display: inline-block;*/
+	margin-bottom: 3px;
+}
+
+.foo_list li:after{
+	content:"|";
+	margin-left:2px;
+}
+
+.foo_list li:last-child:after{
+	content:"";
+}
+
+.foo_list li>a{
+	font-size:1.2rem;
+}
+
+footer small{
+	font-size:1.2rem;
+}
+
+/* foo_social */
+.foo_social li{
+	width:45px;
+	height:45px;
+	/* float:left; */
+	margin-right:8px;
+}
+
+.foo_social li a{
+	/*display: block;
+	width:100%;
+	height:100%;*/
+	opacity: 0.6;
+	/*cursor:pointer;*/
+}
+
+.foo_social>li:nth-child(1)>a{
+	background:url(../images/icon-twitter.png) no-repeat 1px -26px/38px;
+}
+
+.foo_social>li:nth-child(2)>a{
+	background:url(../images/icon-facebook.png) no-repeat 4px -20px/36px;
+}
+
+.foo_social>li:nth-child(3)>a{
+	background:url(../images/icon-aside-rss.png) no-repeat -5px 5px/45px;
+}
+/*footer-e*/
+
+}
